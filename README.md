@@ -2,44 +2,60 @@
 
 # Retrieval-Augmented Generation (RAG) Evaluation Project
 
-This project is a comprehensive framework designed to evaluate RAG models. It offers tools for generating test sets, running RAG pipelines, and evaluating models with detailed reports on performance and weaknesses. The project is a work in progress, with a focus on building robust tools and interfaces for RAG evaluation.
-
 ---
 ## Aim
-Model agnostic production RAG: To be able to freely set up rags with any combination of llms & embedding models - let the users select which model/embeddings they use and give feedback for which work best?
-    - Key feature: Creating vectorstores takes time. So we want to store and hash vectorstores based on llm, embedding model and dataset used to create it, so if that setup occurrs again, we don't have to recreate the vectorstore - this bug took ages to track down
-RAG Evaluation a) : To be able to use "heavier" or more expensive llms to produce testsets that the prodction rags can be evaluated against - Seems to work, but generating the test sets takes time and I haven't increased model complexity yet
-RAG Evaluation b) : To be able to input expert QA pairs as json and create a testset from that, against which the production rags can be evaluated against - To be done.  
-RAG Evaluation c) : Combination of a and b, either/or both by i) Pretraining an llm based on the QA's, ii) augment and weigh the questions in the test set, so that expert answers weigh more heavily than simulated answers. - To be done
-    - Key feature: giskard: opensource test set generation, different types of quesionts for different parts of the rag , see https://docs.giskard.ai/en/stable/reference/rag-toolset/testset_generation.html
-    - Key feature: Model agnosticism. Wrappers for the llm and embdding models so all of them work with the giskard suite used for evaluation - this bug also took ages to track down
-    - Key feature: Save and load testsets that are "approved", or checked. - To be done, need to decouple some things for this to work
-    - Key feature: After having finetuned llm and generated augmented testset, send out simulated 10 answers for each question (maybe 2 questions (20 answers) per day for 2-4 weeks), and let experts grade each answer => larger expert QA pairs which we then can iterate and iterate and iterate, hopefully converging towards something very good. 
-        
+
+### Model-Agnostic Production RAG
+To freely set up RAGs with any combination of LLMs and embedding models, allowing users to select which model/embeddings they use and receive feedback on which configurations work best.
+- **Key Feature**: Creating vectorstores takes time. We aim to store and hash vectorstores based on the LLM, embedding model, and dataset used to create them. If the same setup occurs again, the vectorstore won't need to be recreated (this bug took ages to track down).
+
+### RAG Evaluation
+**a)** Use "heavier" or more expensive LLMs to produce test sets that production RAGs can be evaluated against.  
+- Status: Seems to work, but generating test sets takes time, and increasing model complexity hasn't been tested yet.
+
+**b)** Input expert QA pairs as JSON to create test sets against which production RAGs can be evaluated.  
+- Status: To be done.
+
+**c)** Combine (a) and (b) by:
+  1. Pretraining an LLM based on the QA pairs.
+  2. Augmenting and weighting the questions in the test set, ensuring expert answers weigh more heavily than simulated ones.  
+- Status: To be done.
+
+#### Key Features:
+- **Giskard Integration**: Use open-source test set generation with different types of questions targeting specific parts of the RAG. See [Giskard Documentation](https://docs.giskard.ai/en/stable/reference/rag-toolset/testset_generation.html).
+- **Model-Agnostic Wrappers**: Wrappers for LLMs and embedding models to ensure compatibility with the Giskard evaluation suite (another bug that took ages to track down).
+- **Test Set Handling**: Save and load test sets that are "approved" or verified.  
+  - Status: To be done (requires decoupling for better functionality).
+- **Iterative Improvement**: After fine-tuning the LLM and generating an augmented test set, simulate 10 answers per question (e.g., 2 questions per day for 2–4 weeks). Let experts grade these answers to iteratively expand and refine the QA pairs, converging toward a robust system.
+
+---
 
 ## Current Status
 
-- **Notebook Access Point:** The best way to interact with this project right now is through the Jupyter notebook. It provides a step-by-step guide to using the features.
+### Notebook Access Point
+The best way to interact with this project right now is through the Jupyter notebook, which provides a step-by-step guide for exploring the project's features.
 
 ### Known Issues
-0. Everything is quite messy still. Long way to go. 
-1. Started working on the terminal interface - had a breakdown - left it for later
-2. Error handling in edge cases is limited.
-3. Evaluation logic needs to be slightly better. 
-4. Need to fix so that I can load test sets and use in the eval
+1. The project is still messy and incomplete. Long way to go.
+2. Terminal interface development stalled and needs a complete revisit.
+3. Error handling in edge cases is limited.
+4. Evaluation logic requires refinement.
+5. Test set loading and evaluation need improvement.
 
-#### Notes about modules: 
-- eval_tools has a long way to go
-- giskard_wrappers is not too shabby
-- knowledge_base is not too shabby, might need a handler later
-- models work quite nicely - i might need to find out if I can get model information from model objects (llm/embedding), or how to handle names better for hashing purposes
-- preprocess works okay -  havent been there for a long time
-- rag_interface - i have nothing to say in my defense. It is a mess and should be forgotten about for now, started to work on the interface too early. But as is it is not used either. 
-- RAG_tools needs to be renamed, and the create_answer_fn should probably be moved to the giskard_wrappers module. Also, by looking in the testsets it looks like some of the rag answers are not parsed correctly. 
-- testset_manager has a long way to go
-- utils is just a "others" at this moment. 
-- tbh the entire codebase needs to be refactored, but has not been priority. first to get each piece to work somwhat robustly
+---
 
+## Notes About Modules
+
+- **`eval_tools`**: Still underdeveloped; significant work remains.  
+- **`giskard_wrappers`**: Functional and in good shape.  
+- **`knowledge_base`**: Works well but might need a handler in the future.  
+- **`models`**: Functions nicely. Need better handling of model names or metadata for hashing purposes.  
+- **`preprocess`**: Functional but hasn't been updated in a while.  
+- **`rag_interface`**: A complete mess. Started working on the interface too early. Currently unused but needs a major overhaul.  
+- **`RAG_tools`**: Needs renaming. The `create_answer_fn` function should be moved to the `giskard_wrappers` module. Some test set RAG answers appear to be incorrectly parsed.  
+- **`testset_manager`**: Far from complete.  
+- **`utils`**: Currently an "other" category; needs organization.  
+- **Overall Codebase**: Refactoring is overdue but hasn't been prioritized. The focus remains on making individual components robust first.
 ### Notes about tests: 
 - Only wrote a one test so far: Pairs all possible combinations of embedding models and llms and constructs a small chain of model|parser and asks the chain to tell us a joke - just to see that there are no incompatible options. 
 --- 
