@@ -1,0 +1,78 @@
+[
+    {
+        "question": "Is a Marie Sklodowska-Curie Postdoctoral Fellowship (MSCA-PF) transferable, so that a researcher could change host organisation during the action?",
+        "answer": "The rules for the transfer of a grant to a new beneficiary are described in the\u00a0Model Grant Agreement for Unit Grants, Article 41.It must be noted that the request to transfer the research training activities can only be made by the beneficiary of the grant, meaning the host organisation located in a Member State or Associated Country. To request a transfer of organisation, there must be serious reasons which affect the capacity of the beneficiary to implement the action."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (HORIZON-MSCA-2021-PF-01), is the participation of third parties in the action allowed?",
+        "answer": "For MSCA-PF, the rules of the General Model Grant Agreement (Article 8) on the involvement of affiliated entities do not apply. MSCA-PF (Article 9) allows the beneficiary to use entities with a capital or legal link to it and/or associated partners to carry out work under the action."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF), may a proposal that was rejected under a previous MSCA Postdoctoral Fellowship call be re-submitted?",
+        "answer": "Applicants will be allowed to re-submit a proposal that was rejected under the previous Horizon Europe MSCA Postdoctoral Fellowship call, unless the proposal scored below 70%."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF), can researchers of any nationality participate?",
+        "answer": "Researchers of any nationality can participate in European Postdoctoral Fellowships. However, Global Postdoctoral Fellowships are restricted only to nationals or long-term residents of Member States or Horizon Europe Associated Countries. Long-term residence means a period of legal and continuous residence within EU Member States or Horizon Europe Associated Countries of at least five consecutive years. Periods of absence from the territory of the EU Member State or Horizon Europe associated country will be taken into account for the calculation of this period where they are shorter than six consecutive months and do not exceed in total ten months within this period."
+    },
+    {
+        "question": "While implementing an MSCA-PF, the researcher has been awarded a permanent academic position within an organisation that is not the host institution. Can he/she nevertheless participate in the Marie Sk\u0142odowska-Curie Postdoctoral Fellowship?",
+        "answer": "No, he/she cannot. According to Article 18 of the Model Grant Agreement for Unit Grants, the researcher must work exclusively on the action, unless part-time for professional reasons is allowed and has been approved; additionally, the researcher cannot receive incomes other than those received from the beneficiary for the activities carried out in the frame of the MSCA."
+    },
+    {
+        "question": "During an MSCA Postdoctoral Fellowship (MSCA-PF), the researcher requires additional funding for personnel and lab equipment that is not covered by the MSCA grant. Is it possible to apply for another grant in that respect?",
+        "answer": "The Marie Sklodowska-Curie actions (MSCA) scheme does not prevent the host institution from receiving additional funding as long as the same costs are not reimbursed by both grants, and the researcher does not receive (for activities carried out in the frame of the action) other incomes than those received from the beneficiary."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF), will all sections of the proposal Part B be evaluated, or only those sections to which the page limit is applied?",
+        "answer": "All sections of the proposal will be included in the evaluation. The 10-page limit is applied only to part B1 - sections 1 to 3 (combined). The reason for this is not to cause disadvantage, for example, to researchers with more experience and hence a longer CV, who may otherwise have reduced space to write sections 1 to 3."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF), can a researcher have multiple supervisors within the same host organisation?",
+        "answer": "There must be only one supervisor per host organisation. The supervisor is the senior researcher appointed at the beneficiary to supervise the researcher throughout the whole duration of the action. European Fellowships have one host organisation and thus one supervisor. For Global Postdoctoral Fellowships, an additional supervisor should also be appointed for the time spent at the associated partner for the outgoing phase."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF), what is the difference between secondment and non-academic placement?",
+        "answer": "The non-academic placement is not a secondment."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF), is it possible to work part-time?",
+        "answer": "As a rule, in MSCA-PF the researcher must be employed full-time. Part-time employment can however be accepted on personal or family grounds, after the start of the action. Part-time for professional reasons in order to pursue supplementary activities can also be requested provided that it is agreed beforehand together with the supervisor and beneficiary and has received the prior approval of the European Research Executive Agency (REA). However, the researcher cannot be involved in two MSCA grants at the same time. In case of part-time work for professional reasons, the researcher must dedicate at least 50% of their working time to the MSCA-PF action."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF): is a researcher who already received MSCA funding eligible to apply for a Marie Sklodowska-Curie Postdoctoral Fellowship?",
+        "answer": "If the researcher fulfils the eligibility conditions for the Marie Sklodowska-Curie Postdoctoral Fellowship, they can apply with a different and original research project even if they already received funding from another MSCA call. In this case, the added value and originality of the research activity under the new action must be explained in the proposal. Please note that a researcher cannot benefit from two Marie Sklodowska-Curie action grants at the same time and that the same project cannot benefit twice from different European funding programmes."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF), in case of multiple degrees, which one counts to determine eligibility?",
+        "answer": "In the case of multiple doctoral degrees, the date of the first PhD will be considered in determining eligibility. However, no supporting documents should be added in the proposal application but they should be readily available in case of audit."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF), what is the difference between subcriteria 1.4 and 2.1?",
+        "answer": "Under subcriterion 1.4 (Quality and appropriateness of the researcher's professional experience, competences and skills), applicants should demonstrate how the researcher's existing professional experience is appropriate in relation to the proposed research project."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral European Fellowships (MSCA-EF), how will the mobility rule be applied to periods of remote working/teleworking, when assessing eligibility?",
+        "answer": "In order to be eligible, the researcher cannot be in either of the two following situations:"
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF), will stays for medical reasons be taken into account for the mobility rule?",
+        "answer": "This depends on the duration of the stay for medical reasons. Short stays for medical reasons will not be taken into account for the assessment of the mobility rule. However, if the researcher had to relocate to a different country in order to obtain medical care during a significant period of time, this long stay will be taken into account."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF), how should applicants address the questions of Part A (Role of Participating Organisations) and Part B (Capacity of the Participating Organisations)?",
+        "answer": "In European Fellowships (MSCA-PF-EF), Part A (Role of participating organisation) is relevant only for the beneficiary."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF), does the researcher have to justify his/her family status?",
+        "answer": "If the proposal is successful, it is a contractual obligation for the beneficiary (the entity signing the grant agreement) to ensure that all the necessary documentation demonstrating the researcher's family status is correct and is kept on file in case of audit."
+    },
+    {
+        "question": "Under MSCA Postdoctoral Fellowships (MSCA-PF), the researcher lives in Denmark and wishes to carry out his/her fellowship in a Swedish institution 30 minutes away from his/her residence. Is it possible to continue living in Denmark and work in Sweden?",
+        "answer": "In the MSCA Postdoctoral Fellowships, as long as the beneficiary hosts the researcher at its premises in the specified host country, as required by the MSCA-PF Grant Agreement, the researcher can reside on the other side of the border."
+    },
+    {
+        "question": "Under Marie Sklodowska-Curie Postdoctoral Fellowships (MSCA-PF), how will the non-academic sector placement be evaluated?",
+        "answer": "The additional non-academic sector placement is optional and no penalisation will be applied to applicants that do not propose one. The request for such a placement must be an integral part of the proposal, explaining the added value for the project and for the career development of the researcher, and will be subject to evaluation. This will be scored under the Excellence criterion."
+    }
+]
