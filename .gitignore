@@ -3,7 +3,9 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.so
+*.egg-info/
 
+.pytest_cache
 # Environment variables
 .env
 
@@ -11,13 +13,14 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Data files
-data/raw/
+.data/
+!data/qa/  # Exclude QA folder explicitly if required
+!data/raw/  # Exclude raw folder explicitly if required
 data/processed/
-data/vectorstore/
+data/vectorstores/
 
 # Python virtual environment
 venv/
-*.egg-info/
 
 # OS generated files
 .DS_Store
@@ -25,3 +28,48 @@ Thumbs.db
 
 # Logs and debug files
 *.log
+test_results.log
+
+# Old files or directories
+old
+
+# Coverage reports
+.coverage
+*.cover
+
+# Build artifacts
+build/
+dist/
+*.manifest
+*.spec
+
+# Temporary files and folders
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.swn
+
+# Test-related files
+tests/__pycache__/
+pytest.ini
+
+# Config files (if not meant to be shared)
+config.yaml
+config.json
+
+# Documentation artifacts
+docs/_build/
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Package-lock and yarn files
+package-lock.json
+yarn.lock
+
+# Additional exclusions
+modules/__pycache__/
+__pycache__/

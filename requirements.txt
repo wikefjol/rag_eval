@@ -1,24 +1,23 @@
-langchain
-langchain-openai
-langchain_experimental
-langchain_community
-langchain_huggingface
-langchain_ollama
-langchain_chroma
-langchain[docarray]
-docarray
-pydantic
-python-dotenv
-ruff
-bs4
-ipytest
-giskard[llm]
-Iprogress
-langchain_pinecone
-pytube
-tiktoken
-pinecone-client
-scikit-learn
-pypdf
-sentence-transformers
+# Core dependencies
+numpy
+pandas
+tqdm
+dotenv
 pdfplumber
+
+# LangChain
+langchain-core
+langchain-chroma
+langchain-openai
+langchain-huggingface
+langchain-ollama
+
+# Giskard
+giskard
+
+# Machine Learning
+hdbscan
+scikit-learn
+
+# Optional dependencies
+pytest  # For testing
