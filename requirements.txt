@@ -2,7 +2,7 @@
 numpy
 pandas
 tqdm
-dotenv
+python-dotenv
 pdfplumber
 
 # LangChain
@@ -11,9 +11,11 @@ langchain-chroma
 langchain-openai
 langchain-huggingface
 langchain-ollama
+langchain-experimental
 
 # Giskard
 giskard
+giskard[llm]
 
 # Machine Learning
 hdbscan
